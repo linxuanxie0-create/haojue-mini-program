@@ -1,0 +1,10 @@
+page {
+  min-height: 100%;
+  background: #f4f4f2;
+  color: #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  box-sizing: border-box;
+}
+
+view, text, image, button { box-sizing: border-box; }
+button::after { border: 0; }

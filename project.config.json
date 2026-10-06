@@ -1,0 +1,75 @@
+{
+  "description": "豪爵精品车型选车小程序 UI 原型",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "appid": "wx96cf9a327679a5ee",
+  "projectname": "机车对比小程序",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileHotReLoad": true,
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "condition": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "simulatorPluginLibVersion": {},
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "assets/video"
+      },
+      {
+        "type": "folder",
+        "value": "preview"
+      },
+      {
+        "type": "file",
+        "value": "images/uhr150.svg"
+      },
+      {
+        "type": "file",
+        "value": "IMG_8340.JPG"
+      },
+      {
+        "type": "file",
+        "value": "IMG_8401.PNG"
+      },
+      {
+        "type": "file",
+        "value": "IMG_8402.PNG"
+      },
+      {
+        "type": "file",
+        "value": "截屏2026-10-05 10.48.21.png"
+      },
+      {
+        "type": "file",
+        "value": "uhr150-ui-preview.svg"
+      },
+      {
+        "type": "file",
+        "value": "images/uhr150-motion-cutout.png"
+      }
+    ],
+    "include": []
+  },
+  "editorSetting": {}
+}

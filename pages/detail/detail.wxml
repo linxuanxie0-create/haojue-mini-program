@@ -1,0 +1,23 @@
+<view class="detail-page">
+  <view class="topline"><view class="circle-button" bindtap="backToList">‹</view><text class="top-title">车型详情</text><view class="circle-button more" bindtap="more">···</view></view>
+  <view class="hero-card">
+    <view class="demo-badge">演示资料 · 参数待官方核实</view>
+    <view class="hero-copy"><text class="eyebrow">{{model ? model.category : '车型'}}</text><text class="model-title">{{model ? model.modelName : '待选择'}}</text><text class="model-sub">整车图来自豪爵官网</text></view>
+    <view class="bike-stage"><view class="stage-glow"></view><image class="bike-image" src="{{model ? model.imagePath : '/images/models/placeholder.webp'}}" mode="aspectFit"/><text class="stage-label">{{model ? model.modelName : ''}}</text></view>
+    <view class="swatches"><text>官网默认展示色（图片仅示意）</text></view>
+  </view>
+  <view class="tabs"><view class="tab {{activeTab === '车型亮点' ? 'current' : ''}}" data-tab="车型亮点" bindtap="selectTab">车型亮点</view><view class="tab {{activeTab === '核心配置' ? 'current' : ''}}" data-tab="核心配置" bindtap="selectTab">核心配置</view><view class="tab {{activeTab === '日常体验' ? 'current' : ''}}" data-tab="日常体验" bindtap="selectTab">日常体验</view></view>
+
+  <view wx:if="{{activeTab === '车型亮点'}}" class="intro"><view><text class="eyebrow">HIGHLIGHTS</text><text class="section-title">车型亮点（演示）</text></view><text class="intro-copy">亮点与参数待接入官方核实数据，当前为界面布局示意。</text></view>
+  <view wx:if="{{activeTab === '车型亮点'}}" class="metrics"><view class="metric lime"><view class="metric-top">动力形式 <text class="metric-arrow">↗</text></view><text class="metric-value">待核实</text><text class="metric-foot">官方参数待接入</text></view><view class="metric dark"><view class="metric-top">制动系统 <text class="metric-arrow">↗</text></view><text class="metric-value">待核实</text><text class="metric-foot">官方参数待接入</text></view></view>
+  <view wx:if="{{activeTab === '车型亮点'}}" class="feature-list"><view class="feature-row"><view class="feature-icon">◉</view><view class="feature-text"><text class="feature-title">配置亮点 1</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view><view class="feature-row"><view class="feature-icon">⌁</view><view class="feature-text"><text class="feature-title">配置亮点 2</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view><view class="feature-row"><view class="feature-icon">ϟ</view><view class="feature-text"><text class="feature-title">配置亮点 3</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view></view>
+
+  <view wx:if="{{activeTab === '核心配置'}}" class="intro"><view><text class="eyebrow">SPECS</text><text class="section-title">核心配置</text></view><text class="intro-copy">核心配置待接入官方核实数据。</text></view>
+  <view wx:if="{{activeTab === '核心配置'}}" class="metrics"><view class="metric lime"><view class="metric-top">排量 <text class="metric-arrow">↗</text></view><text class="metric-value">—</text><text class="metric-foot">待核实</text></view><view class="metric dark"><view class="metric-top">座高 <text class="metric-arrow">↗</text></view><text class="metric-value">—</text><text class="metric-foot">待核实</text></view></view>
+
+  <view wx:if="{{activeTab === '日常体验'}}" class="intro"><view><text class="eyebrow">EXPERIENCE</text><text class="section-title">日常体验</text></view><text class="intro-copy">日常体验解读待接入（演示）。</text></view>
+  <view wx:if="{{activeTab === '日常体验'}}" class="feature-list"><view class="feature-row"><view class="feature-icon">◉</view><view class="feature-text"><text class="feature-title">日常体验解读</text><text class="feature-desc">待接入官方定位与场景解读</text></view><text class="feature-arrow">›</text></view></view>
+
+  <view class="source-note">整车图来源：豪爵官网 · 参数为演示，以豪爵官网及实车配置为准</view>
+  <view class="bottom-actions"><view class="compare-button" bindtap="addToCompare">＋ 加入对比</view><view class="ask-button" bindtap="askStore">咨询门店 <text>↗</text></view></view>
+</view>

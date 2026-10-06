@@ -1,0 +1,52 @@
+<view class="compare-page">
+  <view class="page-heading">
+    <text class="heading-title">两款车，放在真实场景里看</text>
+    <text class="heading-note">优势解读结合豪爵官方车型定位</text>
+  </view>
+
+  <view class="model-pair">
+    <view class="model-card model-a" bindtap="openPicker" data-slot="A">
+      <view class="image-stage"><view class="image-glow"></view><image class="vehicle-image" src="{{modelA.imagePath}}" mode="aspectFit"/><text class="image-caption">官方整车图</text></view>
+      <view class="model-info"><view><text class="model-name">{{modelA.modelName}}</text><text class="model-meta">车型 A · {{modelA.category}}</text></view><text class="model-change">更换</text></view>
+    </view>
+    <view class="model-card model-b" bindtap="openPicker" data-slot="B">
+      <block wx:if="{{modelB}}">
+        <view class="image-stage"><view class="image-glow"></view><image class="vehicle-image" src="{{modelB.imagePath}}" mode="aspectFit"/><text class="image-caption">官方整车图</text></view>
+        <view class="model-info"><view><text class="model-name">{{modelB.modelName}}</text><text class="model-meta">车型 B · {{modelB.category}}</text></view><text class="model-change">更换</text></view>
+      </block>
+      <block wx:else>
+      <view class="image-stage placeholder-stage"><view class="placeholder-mark">＋</view><text class="placeholder-copy">选择车型</text></view>
+      <view class="model-info"><view><text class="model-name">待选择</text><text class="model-meta">从豪爵车型中选择</text></view><text class="model-change">选择</text></view>
+      </block>
+    </view>
+  </view>
+
+  <view class="section-head"><view><text class="section-title">场景化对比</text><text class="section-subtitle">不同用法，关注的优势也不同</text></view><text class="section-mark">01 / 02</text></view>
+  <view class="scene-tabs">
+    <view wx:for="{{scenes}}" wx:key="key" class="scene-tab {{activeScene.key === item.key ? 'scene-active' : ''}}" data-key="{{item.key}}" bindtap="selectScene">{{item.label}}</view>
+  </view>
+
+  <view class="scene-card">
+    <view class="scene-title-row"><view><text class="scene-title">{{activeScene.title}}</text><text class="scene-description">{{activeScene.description}}</text></view><view class="scene-number">{{activeScene.index}}</view></view>
+    <view class="scene-focus"><text class="focus-label">可以重点比较</text><text class="focus-copy">{{activeScene.focus}}</text></view>
+    <text class="advantage-label">车型优势</text>
+    <view class="advantage-pair"><view class="advantage-card"><text class="advantage-model">A · {{modelA.modelName}}</text><text class="advantage-copy">{{modelA.modelName}}优势解读待接入（演示占位）</text></view><view class="advantage-card"><text class="advantage-model">B · {{modelB ? modelB.modelName : '待选择'}}</text><text class="advantage-copy">{{modelB ? modelB.modelName + '优势解读待接入（演示占位）' : '选择车型后显示对应解读'}}</text></view></view>
+  </view>
+
+  <view class="page-note">优势解读以官方车型定位为依据，参数用于说明实际使用差异</view>
+  <view class="bottom-actions"><view class="next-button {{modelB ? '' : 'button-disabled'}}" bindtap="goParameters">查看参数对比 <text>›</text></view></view>
+
+  <view wx:if="{{pickerVisible}}" class="picker-mask" bindtap="closePicker">
+    <view class="picker-panel" catchtap="noop">
+      <view class="picker-head"><text>选择车型 {{pickerSlot}}</text><text class="picker-close" bindtap="closePicker">×</text></view>
+      <scroll-view scroll-y class="picker-list">
+        <view wx:for="{{models}}" wx:key="id" class="picker-item {{(pickerSlot === 'A' && modelA.id === item.id) || (pickerSlot === 'B' && modelB && modelB.id === item.id) ? 'picker-item-active' : ''}}" data-index="{{index}}" bindtap="chooseModel">
+          <image class="picker-thumb" src="{{item.imagePath}}" mode="aspectFit" lazy-load/>
+          <view class="picker-copy"><text class="picker-name">{{item.modelName}}</text><text class="picker-cat">{{item.category}}</text></view>
+          <text wx:if="{{(pickerSlot === 'A' && modelA.id === item.id) || (pickerSlot === 'B' && modelB && modelB.id === item.id)}}" class="picker-check">✓</text>
+          <text class="picker-detail" catchtap="viewDetail" data-index="{{index}}">详情</text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

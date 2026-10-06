@@ -1,0 +1,69 @@
+<view class="page">
+  <view class="topbar">
+    <view class="brand-mark">豪</view>
+    <view class="brand-copy"><text class="brand-name">豪爵选车</text><text class="brand-note">按你的需求找车型</text></view>
+    <view class="top-link" bindtap="restart">重新开始</view>
+  </view>
+
+  <view class="intro">
+    <text class="page-title">告诉我你的骑行需求</text>
+    <text class="page-subtitle">回答 6 个小问题，找到更适合你的车</text>
+  </view>
+
+  <view wx:if="{{!showSummary && !showResult}}" class="form-content">
+    <view class="progress-head">
+      <text class="step-label">{{stepIndex + 1}} / {{steps.length}}</text>
+      <text class="step-name">{{currentStep.shortTitle}}</text>
+    </view>
+    <view class="progress-track">
+      <view wx:for="{{progressItems}}" wx:key="key" class="progress-segment {{item.filled ? 'filled' : ''}}"></view>
+    </view>
+
+    <view class="question-block">
+      <text class="question-title">{{currentStep.title}}</text>
+      <text class="question-hint">{{currentStep.hint}}</text>
+    </view>
+
+    <view class="option-grid {{currentStep.multiple ? 'multi-grid' : ''}}">
+      <view wx:for="{{choiceItems}}" wx:key="label" class="option {{item.selected ? 'option-selected' : ''}}" data-index="{{index}}" bindtap="chooseOption">
+        <text class="option-label">{{item.label}}</text>
+        <view class="option-check"><view wx:if="{{item.selected}}" class="check-dot"></view></view>
+      </view>
+    </view>
+
+    <view wx:if="{{currentStep.multiple}}" class="selection-note">{{selectedCount ? '已选 ' + selectedCount + ' 项' : '最多选择 3 项'}}</view>
+    <view wx:else class="selection-note">选择最接近你情况的一项即可</view>
+  </view>
+
+  <view wx:elif="{{showSummary}}" class="summary-content">
+    <view class="summary-heading"><text class="summary-title">需求已整理好</text><text class="summary-subtitle">可返回上一步修改</text></view>
+    <view class="summary-list">
+      <view wx:for="{{summaryItems}}" wx:key="key" class="summary-row">
+        <view class="summary-label"><text>{{item.shortTitle}}</text><text class="summary-index">0{{index + 1}}</text></view>
+        <text class="summary-answer">{{item.answer}}</text>
+        <text wx:if="{{item.key === 'seat-height-recommendation'}}" class="summary-detail">演示估算 · 非官方数据，请以实车为准</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class="result-content">
+    <view class="result-heading"><text class="result-title">为你找到的车型</text><text class="result-subtitle">推荐结果待接入（演示）</text></view>
+    <view class="result-placeholder"><text class="result-empty">暂无推荐结果</text><text class="result-empty-note">推荐逻辑将在下一阶段接入，当前仅为流程演示，请先前往两车对比自行选择车型。</text></view>
+  </view>
+
+  <view class="bottom-area">
+    <view wx:if="{{showResult}}" class="bottom-actions">
+      <view class="back-button" bindtap="restart">重新开始</view>
+      <view class="next-button" bindtap="goCompare">去两车对比 <text class="button-arrow">›</text></view>
+    </view>
+    <view wx:else class="bottom-actions">
+      <view wx:if="{{stepIndex > 0 && !showSummary}}" class="back-button" bindtap="previousStep">上一步</view>
+      <view wx:if="{{showSummary}}" class="back-button" bindtap="editAnswers">返回修改</view>
+      <view class="next-button {{(!canContinue && !showSummary) ? 'button-disabled' : ''}}" bindtap="nextStep">
+        <text>{{showSummary ? '完成' : (canContinue ? (stepIndex === steps.length - 1 ? '查看已选需求' : '继续') : '请选择后继续')}}</text>
+        <text wx:if="{{canContinue || showSummary}}" class="button-arrow">›</text>
+      </view>
+    </view>
+    <text class="privacy-note">答案仅用于本次选车，不会保存</text>
+  </view>
+</view>

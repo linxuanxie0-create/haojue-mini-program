@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/compare/compare",
+    "pages/compare/params"
+  ],
+  "window": {
+    "navigationBarTitleText": "豪爵选车",
+    "navigationBarBackgroundColor": "#f4f4f2",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4f4f2"
+  },
+  "style": "v2"
+}

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="2520" viewBox="0 0 750 2520">
+<rect width="750" height="2860" fill="#f4f4f2"/>
+<text x="44" y="39" font-family="Arial,sans-serif" font-size="23" font-weight="600" fill="#171717">9:41</text><text x="637" y="39" font-family="Arial,sans-serif" font-size="19" fill="#171717">●●●  ▰</text>
+<path d="M0 76h750" stroke="#e7e8e4"/><text x="375" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="600" fill="#171717">两车对比</text>
+<text x="44" y="211" font-family="Arial,sans-serif" font-size="38" font-weight="600" fill="#171717">看参数，也看日常场景</text><text x="46" y="250" font-family="Arial,sans-serif" font-size="20" fill="#73746e">把官方数据翻译成真实骑行中的差异</text>
+<rect x="44" y="285" width="326" height="130" rx="25" fill="#fff"/><circle cx="80" cy="330" r="24" fill="#d7fb35"/><text x="80" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700">A</text><text x="116" y="328" font-family="Arial,sans-serif" font-size="21" font-weight="600">UHR150</text><text x="116" y="357" font-family="Arial,sans-serif" font-size="15" fill="#858681">对比车型 · 版本待确认</text><text x="336" y="340" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#676862">更换</text>
+<rect x="380" y="285" width="326" height="130" rx="25" fill="#fff"/><circle cx="416" cy="330" r="24" fill="#171717"/><text x="416" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#fff">B</text><text x="452" y="328" font-family="Arial,sans-serif" font-size="20" font-weight="600">选择车型</text><text x="452" y="357" font-family="Arial,sans-serif" font-size="15" fill="#858681">从豪爵车型中选择</text><text x="672" y="340" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#676862">选择</text>
+<text x="45" y="480" font-family="Arial,sans-serif" font-size="28" font-weight="600">场景化对比</text><text x="45" y="510" font-family="Arial,sans-serif" font-size="16" fill="#777872">按你的日常使用方式看差异</text><text x="703" y="495" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#858681">骑行场景</text>
+<rect x="44" y="535" width="154" height="63" rx="32" fill="#d7fb35"/><text x="121" y="574" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="600">城市通勤</text><rect x="209" y="535" width="154" height="63" rx="32" fill="#fff"/><text x="286" y="574" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">长途骑行</text><rect x="374" y="535" width="154" height="63" rx="32" fill="#fff"/><text x="451" y="574" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">双人出行</text>
+<rect x="44" y="615" width="662" height="342" rx="27" fill="#fff"/><text x="68" y="658" font-family="Arial,sans-serif" font-size="23" font-weight="600">频繁起停与掉头</text><text x="68" y="688" font-family="Arial,sans-serif" font-size="16" fill="#777872">城市路况常要起步、挪车和低速转向。</text><circle cx="664" cy="653" r="22" fill="#171717"/><text x="664" y="661" text-anchor="middle" font-size="22" fill="#fff">↗</text>
+<rect x="67" y="715" width="616" height="84" rx="16" fill="#f4f5f0"/><text x="84" y="744" font-family="Arial,sans-serif" font-size="14" fill="#75766f">重点参考</text><text x="84" y="775" font-family="Arial,sans-serif" font-size="17" font-weight="600">最大扭矩、整备质量、座高与轴距</text>
+<rect x="67" y="818" width="298" height="116" rx="17" fill="#f7f7f5"/><text x="86" y="851" font-family="Arial,sans-serif" font-size="15" font-weight="600">车型 A · UHR150</text><text x="86" y="884" font-family="Arial,sans-serif" font-size="14" fill="#858681">选择两款车型后显示</text><text x="86" y="906" font-family="Arial,sans-serif" font-size="14" fill="#858681">基于实车资料的优势解读</text><rect x="379" y="818" width="304" height="116" rx="17" fill="#f7f7f5"/><text x="398" y="851" font-family="Arial,sans-serif" font-size="15" font-weight="600">车型 B · 选择车型</text><text x="398" y="884" font-family="Arial,sans-serif" font-size="14" fill="#858681">依据官方定位和参数</text><text x="398" y="906" font-family="Arial,sans-serif" font-size="14" fill="#858681">生成场景化差异说明</text>
+<text x="45" y="1034" font-family="Arial,sans-serif" font-size="28" font-weight="600">参数翻译</text><text x="45" y="1064" font-family="Arial,sans-serif" font-size="16" fill="#777872">官方数值对照 · 日常影响说明</text><text x="703" y="1048" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#858681">A / B 并排对照</text>
+<rect x="44" y="1087" width="662" height="1128" rx="25" fill="#fff"/>
+<path d="M44 1112q0-25 25-25h612q25 0 25 25v71H44Z" fill="#f0f1ed"/>
+<text x="67" y="1133" font-family="Arial,sans-serif" font-size="17" font-weight="600">官方参数</text><text x="67" y="1157" font-family="Arial,sans-serif" font-size="14" fill="#777872">翻译成用户能理解的内容</text><circle cx="579" cy="1145" r="20" fill="#d7fb35"/><text x="579" y="1152" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700">A</text><circle cx="660" cy="1145" r="20" fill="#171717"/><text x="660" y="1152" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">B</text>
+<text x="67" y="1227" font-family="Arial,sans-serif" font-size="15" font-weight="600" fill="#777872">动力表现</text>
+<text x="67" y="1261" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">排量</text>
+<text x="67" y="1286" font-family="Arial,sans-serif" font-size="14" fill="#74756f">动力储备大致处于什么水平</text>
+<text x="579" y="1267" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1267" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1320h615" stroke="#eeefeb"/>
+<text x="67" y="1342" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">最大功率</text>
+<text x="67" y="1367" font-family="Arial,sans-serif" font-size="14" fill="#74756f">高速与持续加速能力的参考</text>
+<text x="579" y="1348" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1348" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1401h615" stroke="#eeefeb"/>
+<text x="67" y="1423" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">最大扭矩</text>
+<text x="67" y="1448" font-family="Arial,sans-serif" font-size="14" fill="#74756f">起步、加速、爬坡时的动力感受</text>
+<text x="579" y="1429" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1429" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1482h615" stroke="#eeefeb"/>
+<text x="67" y="1526" font-family="Arial,sans-serif" font-size="15" font-weight="600" fill="#777872">操控与通过</text>
+<text x="67" y="1560" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">整备质量</text>
+<text x="67" y="1585" font-family="Arial,sans-serif" font-size="14" fill="#74756f">推车、挪车、低速掉头是否轻松</text>
+<text x="579" y="1566" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1566" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1619h615" stroke="#eeefeb"/>
+<text x="67" y="1641" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">座高</text>
+<text x="67" y="1666" font-family="Arial,sans-serif" font-size="14" fill="#74756f">双脚着地难度与身高适配</text>
+<text x="579" y="1647" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1647" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1700h615" stroke="#eeefeb"/>
+<text x="67" y="1722" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">轴距</text>
+<text x="67" y="1747" font-family="Arial,sans-serif" font-size="14" fill="#74756f">灵活性与行驶稳定性的参考</text>
+<text x="579" y="1728" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1728" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1781h615" stroke="#eeefeb"/>
+<text x="67" y="1803" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">最小离地间隙</text>
+<text x="67" y="1828" font-family="Arial,sans-serif" font-size="14" fill="#74756f">通过减速带和较差路面的参考</text>
+<text x="579" y="1809" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1809" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1862h615" stroke="#eeefeb"/>
+<text x="67" y="1906" font-family="Arial,sans-serif" font-size="15" font-weight="600" fill="#777872">续航与安全</text>
+<text x="67" y="1940" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">油箱容量</text>
+<text x="67" y="1965" font-family="Arial,sans-serif" font-size="14" fill="#74756f">长途出行时补油的便利程度</text>
+<text x="579" y="1946" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="1946" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 1999h615" stroke="#eeefeb"/>
+<text x="67" y="2021" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">轮胎规格</text>
+<text x="67" y="2046" font-family="Arial,sans-serif" font-size="14" fill="#74756f">抓地、稳定与操控方面的参考</text>
+<text x="579" y="2027" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="2027" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 2080h615" stroke="#eeefeb"/>
+<text x="67" y="2102" font-family="Arial,sans-serif" font-size="18" font-weight="600" fill="#171717">制动 / ABS / TCS</text>
+<text x="67" y="2127" font-family="Arial,sans-serif" font-size="14" fill="#74756f">制动与湿滑路面的安全辅助能力</text>
+<text x="579" y="2108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<text x="660" y="2108" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#898a84">暂无</text>
+<path d="M67 2161h615" stroke="#eeefeb"/>
+<text x="49" y="2255" font-family="Arial,sans-serif" font-size="14" fill="#73746e">车型参数以豪爵官方资料为准；未核实项目将标注暂无资料。</text>
+<rect x="0" y="2310" width="750" height="210" fill="#f4f4f2"/><path d="M0 2310h750" stroke="#e8e9e5"/><rect x="48" y="2328" width="654" height="80" rx="40" fill="#171717"/><text x="375" y="2378" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="#fff">咨询门店　↗</text><rect x="288" y="2489" width="174" height="7" rx="4" fill="#171717"/>
+</svg>

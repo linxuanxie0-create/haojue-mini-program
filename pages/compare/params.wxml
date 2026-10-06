@@ -1,0 +1,25 @@
+<view class="parameter-page">
+  <view class="parameter-heading">
+    <view><text class="parameter-title">参数翻译</text><text class="parameter-subtitle">一屏看懂参数与日常感受</text></view>
+    <text class="page-count">02 / 02</text>
+  </view>
+
+  <view class="model-headings">
+    <view class="model-heading"><view class="model-dot dot-a">A</view><view class="model-heading-copy"><text class="model-heading-name">{{modelA ? modelA.modelName : '未选择'}}</text><text class="model-heading-meta">{{modelA ? '已选车型 A' : '请返回选择'}}</text></view></view>
+    <view class="model-heading"><view class="model-dot dot-b">B</view><view class="model-heading-copy"><text class="model-heading-name">{{modelB ? modelB.modelName : '未选择'}}</text><text class="model-heading-meta">{{modelB ? '已选车型 B' : '请返回选择'}}</text></view></view>
+  </view>
+
+  <view class="table-head"><view class="parameter-column"><text class="table-label">官方参数</text><text class="table-sublabel">翻译成日常体验</text></view><text class="value-column">A</text><text class="value-column">B</text></view>
+  <view class="parameter-list">
+    <view wx:for="{{parameters}}" wx:key="key" class="parameter-row">
+      <view class="parameter-copy"><text class="parameter-name">{{item.name}}</text><text class="parameter-translation">{{item.translation}}</text></view>
+      <text class="parameter-value">—</text>
+      <text class="parameter-value">—</text>
+    </view>
+  </view>
+
+  <view class="parameter-footer">
+    <text class="data-note">“—”表示暂无已核实数据 · 数据来源：豪爵官方资料</text>
+    <view class="back-to-scenes" bindtap="backToScenes">‹  返回场景化对比</view>
+  </view>
+</view>

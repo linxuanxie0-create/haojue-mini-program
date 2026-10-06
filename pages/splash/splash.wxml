@@ -1,0 +1,41 @@
+<view class="cover-page">
+  <image class="cover-motion" src="/images/uhr150-motion-cutout.webp" mode="aspectFit"></image>
+
+  <view class="ambient ambient-top"></view>
+  <view class="ambient ambient-bottom"></view>
+
+  <view class="cover-header" style="top: {{headerTop}}px;">
+    <view class="brand-mark">豪</view>
+    <view class="brand-wording">
+      <view class="brand-name">豪爵选车</view>
+      <view class="brand-note">HAOJUE SELECT</view>
+    </view>
+  </view>
+
+  <view class="model-panel" style="top: {{modelTop}}px;">
+    <view class="model-series">UHR</view>
+    <view class="model-number">Vroom</view>
+    <view class="model-state">
+      <view class="state-dot"></view>
+      <view>READY</view>
+    </view>
+  </view>
+
+  <view class="cover-content">
+    <view class="cover-title">选一台真正适合你的车</view>
+    <view class="cover-description">从骑行需求出发，理解车型之间真实的差别</view>
+
+    <view class="entry-actions">
+      <view class="entry-button entry-primary" bindtap="goChoose">
+        <view class="entry-label">帮我选车</view>
+        <view class="entry-arrow">›</view>
+      </view>
+      <view class="entry-button entry-secondary" bindtap="goCompare">
+        <view class="entry-label">两车对比</view>
+        <view class="entry-arrow">›</view>
+      </view>
+    </view>
+
+    <view class="detail-entry" bindtap="goDetail">查看车型详情（演示） <text>›</text></view>
+  </view>
+</view>
