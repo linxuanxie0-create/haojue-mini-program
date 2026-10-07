@@ -34,10 +34,6 @@
     "ignore": [
       {
         "type": "folder",
-        "value": "assets/video"
-      },
-      {
-        "type": "folder",
         "value": "preview"
       },
       {
@@ -63,10 +59,6 @@
       {
         "type": "file",
         "value": "uhr150-ui-preview.svg"
-      },
-      {
-        "type": "file",
-        "value": "images/uhr150-motion-cutout.png"
       }
     ],
     "include": []
