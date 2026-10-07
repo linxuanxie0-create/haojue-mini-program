@@ -37,8 +37,16 @@
         "value": "preview"
       },
       {
+        "type": "folder",
+        "value": "downloads"
+      },
+      {
         "type": "file",
         "value": "images/uhr150.svg"
+      },
+      {
+        "type": "file",
+        "value": "images/uhr150-motion-cutout.webp"
       },
       {
         "type": "file",

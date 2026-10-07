@@ -1,6 +1,8 @@
 // 豪爵官方车型图片素材库映射（来源：豪爵官网产品世界 / 车型比较页）
-// 更新日期：2026-10-06
+// 更新日期：2026-10-07
 // 说明：共 59 款车型；已剔除 2 款警用特种车型（XMC2TZ-DL250J-A / XMC2PW/45-GW250J-HA）。列表含 4 款公务车（category 为「公务车」），是否对消费者展示由产品最终确认。
+const cloudImageRoot = 'cloud://cloud1-d5gg9b5pud3552c21.636c-cloud1-d5gg9b5pud3552c21-1499901114/haojue-official-2026-10-07/'
+
 const models = [
   {
     "id": "gsx-8r",
@@ -593,5 +595,11 @@ const models = [
     "compareId": "10"
   }
 ];
+
+models.forEach(model => {
+  const cloudFileName = model.modelName.replace(/[\\/:*?"<>|]/g, '-') + '.png'
+  model.localImagePath = model.imagePath
+  model.imagePath = cloudImageRoot + cloudFileName
+})
 
 module.exports = { models };
