@@ -47,8 +47,16 @@
   </view>
 
   <view wx:else class="result-content">
-    <view class="result-heading"><text class="result-title">为你找到的车型</text><text class="result-subtitle">推荐结果待接入（演示）</text></view>
-    <view class="result-placeholder"><text class="result-empty">暂无推荐结果</text><text class="result-empty-note">推荐逻辑将在下一阶段接入，当前仅为流程演示，请先前往两车对比自行选择车型。</text></view>
+    <view class="result-heading"><text class="result-title">为你找到的车型</text><text class="result-subtitle">{{resultMessage}}</text></view>
+    <view wx:for="{{recommendations}}" wx:key="id" class="summary-list">
+      <view class="summary-row" data-id="{{item.id}}" bindtap="viewModel"><text class="summary-label">{{item.modelName}}</text><text class="summary-answer">内部匹配分 {{item.scoreText}} / 100 · 查看详情 ›</text></view>
+      <view class="summary-row"><text class="summary-detail">{{item.breakdownText}} · {{item.priceText}}</text></view>
+      <view class="summary-row"><text class="summary-detail">{{item.variant_note}} · 门店有售状态待确认 · 安全证据：{{item.safety_features_verified.status}} · 评分含L2公式与L3启发式，待复核</text></view>
+      <view wx:for="{{item.alternatives}}" wx:for-item="variant" wx:key="id" class="summary-row" data-id="{{variant.id}}" bindtap="viewModel"><text class="summary-detail">同车系其他版本：{{variant.name}} ›</text></view>
+    </view>
+    <view wx:if="{{!recommendations.length}}" class="result-placeholder"><text class="result-empty">暂无符合条件的推荐</text><text class="result-empty-note">未放宽预算或推荐条件，请返回修改需求或咨询门店。</text></view>
+    <view wx:if="{{pricePending.length}}" class="summary-list"><text class="result-subtitle">价格待确认车型（未进入预算合规推荐）</text><view wx:for="{{pricePending}}" wx:key="id" class="summary-row" data-id="{{item.id}}" bindtap="viewModel"><text class="summary-answer">{{item.modelName}} · 查看资料/咨询 ›</text></view></view>
+    <text class="result-subtitle">静态座高不能保证实际着地，请到店试坐。首次骑行请确认合法驾照并佩戴护具。资料快照：2026-10-07，尚待正式发布审核。</text>
   </view>
 
   <view class="bottom-area">

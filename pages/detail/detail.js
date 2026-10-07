@@ -1,12 +1,13 @@
-const { models } = require('../../data/models.js')
+const { models, parameterFields } = require('../../data/models.js')
 
 Page({
   data: { activeTab: '车型亮点', model: null },
 
   onLoad(options) {
-    const id = options.model ? decodeURIComponent(options.model) : 'uhr150-new'
-    const model = models.find(item => item.id === id) || models.find(item => item.id === 'uhr150-new') || models[0]
-    this.setData({ model })
+    const id = options.model || 'uhr150-new'
+    const model = models.find(item => item.id === id) || null
+    this.setData({ model, parameterRows: Object.keys(parameterFields).map(key => ({ key, name: parameterFields[key], value: model ? model.parameters[key] : '官方数据待核验' })) })
+    if (!model) wx.showToast({ title: '车型不存在，请返回重新选择', icon: 'none' })
   },
 
   selectTab(event) {
@@ -26,7 +27,8 @@ Page({
   },
 
   addToCompare() {
-    const modelId = this.data.model ? this.data.model.id : ''
+    if (!this.data.model) return
+    const modelId = this.data.model.id
     wx.navigateTo({ url: '/pages/compare/compare?a=' + encodeURIComponent(modelId) })
   }
 })

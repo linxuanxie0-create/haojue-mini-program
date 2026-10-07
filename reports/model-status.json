@@ -1,0 +1,1976 @@
+{
+  "status": "NOT_READY_FOR_PRODUCTION",
+  "total": 59,
+  "publicService": 4,
+  "consumers": 55,
+  "screeningEligible": 54,
+  "consumerKnownPrice": 38,
+  "consumerUnknownPrice": 17,
+  "directSafetyEvidence": 3,
+  "issues": [
+    {
+      "A": "GSX-8R",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "DL250-C",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DL250-A 无三箱",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "GSX250R-F",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "GSX250R-A",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DL150",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DR150S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DKS150 ABS",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "ABS版（车型名称；待核配置细节）",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "DKS150 ABS",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "DKS150 CBS",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "CBS版（车型名称；待核配置细节）",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "DKS150 CBS",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "DK150R",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DK150R",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "NK150S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DN150",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DH150ES",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "DH150ES",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "EH150A/S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "EH150A/S",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "EH150",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "EH150",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "翼爽 DM150ES",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "翼爽 DM150ES",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "翼爽 DM125E",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "翼爽 DM125E",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "GZS150 ABS",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "ABS版（车型名称；待核配置细节）",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "宝逸 HJ150-11E",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "宝逸 HJ150-11E",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "宝逸 HJ150-11F",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "宝逸 HJ150-11F",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "GN125-5F",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "GN125-5F",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "GN125-5",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "GN125-5",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "HJ125-8W/8X",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "HJ125-8W/8X",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "HJ125-8Y/8Q",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "HJ125-8Y/8Q",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "TVL350",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "TVL350",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "196kg（扶手版）/208kg（箱杠版）",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "UFR150 4 Valves VVL",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UFR150 4 Valves VVL",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "145kg（扶手版）/150kg（箱杠版）",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "UFR150A",
+      "B": "P0",
+      "C": "驾驭门槛缺必要客观数据",
+      "D": "未完成官方参数核验",
+      "E": "自动推荐停用，进入人工咨询",
+      "F": "官网参数页/门店对应版本"
+    },
+    {
+      "A": "UFR150A",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UFR150",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UFR150",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "145kg（扶手/扶手护杠）/150kg（箱杠）",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "UHR150 26’升级款",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "UHR150 26’升级款",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "140/144kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "UHR150新款",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "UHR150高手把款",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "UHR150高手把款",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "140/144kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "ADX125 Plus",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "ADX125 Plus",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "120kg（扶手版）/125kg（箱杠版）",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "ADX125",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "120kg（扶手）/125kg（箱杠）",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "Lumi",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "Lumi",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "115/120kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "AFR125X",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "AFR125S",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "AFR125",
+      "B": "P1",
+      "C": "安全配置有版本混淆可能",
+      "D": "既有审计标CBS；需复核版本配置",
+      "E": "进入版本复核队列；前端仅展示已确认配置",
+      "F": "官网对应配置页"
+    },
+    {
+      "A": "UFD125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UFD125",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "115/118kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "USR125 PRIME",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "NFR125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VX125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VX125",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "116/119kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "VD125S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VD125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VH125S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VSR125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "U100",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "U100",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "100/104kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "宇钻",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "新悦星",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VF125",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VF125",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "108/110kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "VF100G",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "VF100G",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "VF100G",
+      "B": "P1",
+      "C": "同型号不同配置质量不同",
+      "D": "102/104kg",
+      "E": "当前按首个配置计算；推荐卡必须核对所售版本",
+      "F": "对应版本参数"
+    },
+    {
+      "A": "UT110",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UH110S",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UH110S",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    },
+    {
+      "A": "UG110",
+      "B": "P1",
+      "C": "安全评分非官方确认",
+      "D": "官网缺少确切版本的ABS/CBS/TCS证据",
+      "E": "3分仅内部中性占位；前端不可宣称有ABS",
+      "F": "官网配置/价格页"
+    },
+    {
+      "A": "UG110",
+      "B": "P0",
+      "C": "缺可用价格",
+      "D": "现有官网价格为—或未记录",
+      "E": "固定预算自动推荐不纳入；可标为询价候选",
+      "F": "官网售价/门店实际成交价"
+    }
+  ],
+  "models": [
+    {
+      "id": "gsx-8r",
+      "name": "GSX-8R",
+      "family": "GSX-8R",
+      "eligible": true,
+      "publicService": false,
+      "price": 99800,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 810,
+      "mass": 205,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dl250-c",
+      "name": "DL250-C",
+      "family": "DL250",
+      "eligible": true,
+      "publicService": false,
+      "price": 20980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 795,
+      "mass": 206,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dl250-a",
+      "name": "DL250-A 无三箱",
+      "family": "DL250",
+      "eligible": true,
+      "publicService": false,
+      "price": 19880,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 795,
+      "mass": 188,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gsx250r-f",
+      "name": "GSX250R-F",
+      "family": "GSX250R",
+      "eligible": true,
+      "publicService": false,
+      "price": 18980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 790,
+      "mass": 178,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gsx250r-a",
+      "name": "GSX250R-A",
+      "family": "GSX250R",
+      "eligible": true,
+      "publicService": false,
+      "price": 19980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 790,
+      "mass": 178,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dl150",
+      "name": "DL150",
+      "family": "DL150",
+      "eligible": true,
+      "publicService": false,
+      "price": 14680,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 795,
+      "mass": 148,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dr150s",
+      "name": "DR150S",
+      "family": "DR150S",
+      "eligible": true,
+      "publicService": false,
+      "price": 12880,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 790,
+      "mass": 148,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dks150-abs",
+      "name": "DKS150 ABS",
+      "family": "DKS150",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 760,
+      "mass": 139,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "ABS版（车型名称；待核配置细节）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dks150-cbs",
+      "name": "DKS150 CBS",
+      "family": "DKS150",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 760,
+      "mass": 139,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "CBS版（车型名称；待核配置细节）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dk150r",
+      "name": "DK150R",
+      "family": "DK150R",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 760,
+      "mass": 137,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "nk150s",
+      "name": "NK150S",
+      "family": "NK150S",
+      "eligible": true,
+      "publicService": false,
+      "price": 12880,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 835,
+      "mass": 137,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dn150",
+      "name": "DN150",
+      "family": "DN150",
+      "eligible": true,
+      "publicService": false,
+      "price": 11180,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": 131,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "dh150es",
+      "name": "DH150ES",
+      "family": "DH150ES",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 760,
+      "mass": 139,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "eh150a-s",
+      "name": "EH150A/S",
+      "family": "EH150",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 765,
+      "mass": 137,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "eh150",
+      "name": "EH150",
+      "family": "EH150",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 765,
+      "mass": 137,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "yishuang-dm150es",
+      "name": "翼爽 DM150ES",
+      "family": "翼爽 DM150ES",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 750,
+      "mass": 132,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "yishuang-dm125e",
+      "name": "翼爽 DM125E",
+      "family": "翼爽 DM125E",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 750,
+      "mass": 132,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "tr300-plus-travel",
+      "name": "TR300 Plus 旅行版",
+      "family": "TR300",
+      "eligible": true,
+      "publicService": false,
+      "price": 23280,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 730,
+      "mass": 200,
+      "safety": {
+        "ABS": true,
+        "CBS": null,
+        "TCS": null,
+        "status": "直接官网证据",
+        "note": "博世双通道ABS（原表字段）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "tr300-plus-city",
+      "name": "TR300 Plus 城市版",
+      "family": "TR300",
+      "eligible": true,
+      "publicService": false,
+      "price": 21980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 730,
+      "mass": 189,
+      "safety": {
+        "ABS": true,
+        "CBS": null,
+        "TCS": null,
+        "status": "直接官网证据",
+        "note": "博世双通道ABS（原表字段）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gzs150-abs",
+      "name": "GZS150 ABS",
+      "family": "GZS150 ABS",
+      "eligible": true,
+      "publicService": false,
+      "price": 14980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 700,
+      "mass": 158,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "ABS版（车型名称；待核配置细节）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "baoyi-hj150-11e",
+      "name": "宝逸 HJ150-11E",
+      "family": "宝逸 HJ150-11E",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 3,
+      "seat": 745,
+      "mass": 138,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "baoyi-hj150-11f",
+      "name": "宝逸 HJ150-11F",
+      "family": "宝逸 HJ150-11F",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 745,
+      "mass": 132,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gn125-5f",
+      "name": "GN125-5F",
+      "family": "GN125",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 740,
+      "mass": 123,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gn125-5",
+      "name": "GN125-5",
+      "family": "GN125",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 740,
+      "mass": 123,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "hj125-8w-8x",
+      "name": "HJ125-8W/8X",
+      "family": "HJ125-8W/8X",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 740,
+      "mass": 123,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "hj125-8y-8q",
+      "name": "HJ125-8Y/8Q",
+      "family": "HJ125-8Y/8Q",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 2,
+      "seat": 740,
+      "mass": 123,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "tvl350",
+      "name": "TVL350",
+      "family": "TVL350",
+      "eligible": true,
+      "publicService": false,
+      "price": 28980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 780,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "ufr150-4v-vvl",
+      "name": "UFR150 4 Valves VVL",
+      "family": "UFR150",
+      "eligible": true,
+      "publicService": false,
+      "price": 16680,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "ufr150a",
+      "name": "UFR150A",
+      "family": "UFR150",
+      "eligible": false,
+      "publicService": false,
+      "price": 15280,
+      "priceStatus": "snapshot_reference",
+      "difficulty": null,
+      "seat": null,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "ufr150",
+      "name": "UFR150",
+      "family": "UFR150",
+      "eligible": true,
+      "publicService": false,
+      "price": 15280,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "uhr150-2026",
+      "name": "UHR150 26’升级款",
+      "family": "UHR150",
+      "eligible": true,
+      "publicService": false,
+      "price": 13780,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "uhr150-new",
+      "name": "UHR150新款",
+      "family": "UHR150",
+      "eligible": true,
+      "publicService": false,
+      "price": 14280,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": 144,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "uhr150-high-handlebar",
+      "name": "UHR150高手把款",
+      "family": "UHR150",
+      "eligible": true,
+      "publicService": false,
+      "price": 13380,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 2,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "既有L1审计给出ABS/TCS；需复核具体年份和配置对应关系"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "adx125-plus",
+      "name": "ADX125 Plus",
+      "family": "ADX125",
+      "eligible": true,
+      "publicService": false,
+      "price": 11380,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "adx125",
+      "name": "ADX125",
+      "family": "ADX125",
+      "eligible": true,
+      "publicService": false,
+      "price": 11380,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 760,
+      "mass": null,
+      "safety": {
+        "ABS": true,
+        "CBS": null,
+        "TCS": true,
+        "status": "直接官网证据",
+        "note": "ABS+TCS（当前官网ADX125页面）"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "lumi",
+      "name": "Lumi",
+      "family": "Lumi",
+      "eligible": true,
+      "publicService": false,
+      "price": 10180,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "afr125x",
+      "name": "AFR125X",
+      "family": "AFR125",
+      "eligible": true,
+      "publicService": false,
+      "price": 10580,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 120,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "afr125s",
+      "name": "AFR125S",
+      "family": "AFR125",
+      "eligible": true,
+      "publicService": false,
+      "price": 9980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 120,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "原表提及ABS/CBS/TCS，但可能属于版本范围，暂不跨版本断言"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "afr125",
+      "name": "AFR125",
+      "family": "AFR125",
+      "eligible": true,
+      "publicService": false,
+      "price": 8980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 120,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "需核实版本",
+        "note": "既有审计标CBS；需复核版本配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "ufd125",
+      "name": "UFD125",
+      "family": "UFD125",
+      "eligible": true,
+      "publicService": false,
+      "price": 8580,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "usr125-prime",
+      "name": "USR125 PRIME",
+      "family": "USR125 PRIME",
+      "eligible": true,
+      "publicService": false,
+      "price": 8180,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 110,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "nfr125",
+      "name": "NFR125",
+      "family": "NFR125",
+      "eligible": true,
+      "publicService": false,
+      "price": 7980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 115,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "vx125",
+      "name": "VX125",
+      "family": "VX125",
+      "eligible": true,
+      "publicService": false,
+      "price": 7980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "vd125s",
+      "name": "VD125S",
+      "family": "VD125S",
+      "eligible": true,
+      "publicService": false,
+      "price": 7580,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 120,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "vd125",
+      "name": "VD125",
+      "family": "VD125",
+      "eligible": true,
+      "publicService": false,
+      "price": 7380,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 117,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "vh125s",
+      "name": "VH125S",
+      "family": "VH125S",
+      "eligible": true,
+      "publicService": false,
+      "price": 6980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 740,
+      "mass": 114,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "vsr125",
+      "name": "VSR125",
+      "family": "VSR125",
+      "eligible": true,
+      "publicService": false,
+      "price": 6880,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 745,
+      "mass": 113,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "u100",
+      "name": "U100",
+      "family": "U100",
+      "eligible": true,
+      "publicService": false,
+      "price": 6580,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 730,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "yuzuan",
+      "name": "宇钻",
+      "family": "宇钻",
+      "eligible": true,
+      "publicService": false,
+      "price": 6580,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 745,
+      "mass": 113,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "xinyuexing",
+      "name": "新悦星",
+      "family": "新悦星",
+      "eligible": true,
+      "publicService": false,
+      "price": 5980,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 745,
+      "mass": 110,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "vf125",
+      "name": "VF125",
+      "family": "VF125",
+      "eligible": true,
+      "publicService": false,
+      "price": 5680,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 745,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "vf100g",
+      "name": "VF100G",
+      "family": "VF100G",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 1,
+      "seat": 720,
+      "mass": null,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "ut110",
+      "name": "UT110",
+      "family": "UT110",
+      "eligible": true,
+      "publicService": false,
+      "price": 6880,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 1,
+      "seat": 765,
+      "mass": 103,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "uh110s",
+      "name": "UH110S",
+      "family": "UH110S",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 1,
+      "seat": 765,
+      "mass": 102,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "ug110",
+      "name": "UG110",
+      "family": "UG110",
+      "eligible": true,
+      "publicService": false,
+      "price": null,
+      "priceStatus": "unknown",
+      "difficulty": 1,
+      "seat": 780,
+      "mass": 99,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gw300j",
+      "name": "GW300J",
+      "family": "GW300J",
+      "eligible": false,
+      "publicService": true,
+      "price": 48180,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 780,
+      "mass": 224,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "dl250j-a",
+      "name": "DL250J-A",
+      "family": "DL250",
+      "eligible": false,
+      "publicService": true,
+      "price": 45800,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 795,
+      "mass": 221,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    },
+    {
+      "id": "gw250j-ha",
+      "name": "GW250J-HA",
+      "family": "GW250J-HA",
+      "eligible": false,
+      "publicService": true,
+      "price": 41100,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 4,
+      "seat": 780,
+      "mass": 218,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "存在多配置参数；所售版本、重量及对应价格待核验，不拼接配置"
+    },
+    {
+      "id": "dk150j",
+      "name": "DK150J",
+      "family": "DK150J",
+      "eligible": false,
+      "publicService": true,
+      "price": 16500,
+      "priceStatus": "snapshot_reference",
+      "difficulty": 3,
+      "seat": 760,
+      "mass": 157,
+      "safety": {
+        "ABS": null,
+        "CBS": null,
+        "TCS": null,
+        "status": "L3 未验证中性值",
+        "note": "未取得版本级ABS/CBS/TCS结论，不能当作无配置"
+      },
+      "review": "部分版本/评分待人工审核",
+      "availability": null,
+      "version": "车型级快照；所售版本及价格请到店核对"
+    }
+  ]
+}

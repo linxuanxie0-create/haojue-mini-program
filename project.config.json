@@ -59,6 +59,42 @@
       {
         "type": "file",
         "value": "uhr150-ui-preview.svg"
+      },
+      {
+        "type": "folder",
+        "value": "scripts"
+      },
+      {
+        "type": "folder",
+        "value": "tests"
+      },
+      {
+        "type": "folder",
+        "value": "reports"
+      },
+      {
+        "type": "folder",
+        "value": "data/source"
+      },
+      {
+        "type": "file",
+        "value": "data/source.schema.json"
+      },
+      {
+        "type": "file",
+        "value": "README.md"
+      },
+      {
+        "type": "file",
+        "value": "data/audited-source.json"
+      },
+      {
+        "type": "file",
+        "value": "data/quality.json"
+      },
+      {
+        "type": "file",
+        "value": "data/store-overrides.json"
       }
     ],
     "include": []

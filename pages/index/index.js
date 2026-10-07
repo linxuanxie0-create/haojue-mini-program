@@ -1,3 +1,6 @@
+const { models } = require('../../data/models.js')
+const { recommend, heights, seatReferences } = require('../../utils/recommend.js')
+
 const steps = [
   {
     key: 'budget',
@@ -40,7 +43,7 @@ const steps = [
     title: '选车时你最关注哪些方面？',
     hint: '最多选 3 项，优先告诉我们你在意的事。',
     multiple: true,
-    options: ['动力表现', '轻松好骑', '安全配置', '乘坐舒适', '储物空间', '省心耐用']
+    options: ['预算合适', '轻松好骑', '安全配置', '乘坐舒适', '储物空间', '省心耐用']
   }
 ]
 
@@ -52,22 +55,11 @@ function getProgressItems(activeIndex) {
   return steps.map((step, index) => ({ key: step.key, filled: index <= activeIndex }))
 }
 
-const seatHeightGuide = {
-  '≤155cm': { both: '优先≤720mm', one: '优先≤750mm' },
-  '156–160cm': { both: '优先≤730mm', one: '优先≤760mm' },
-  '161–165cm': { both: '优先≤750mm', one: '优先≤780mm' },
-  '166–170cm': { both: '优先≤760mm', one: '优先≤800mm' },
-  '171–175cm': { both: '优先≤780mm', one: '优先≤820mm' },
-  '176–180cm': { both: '优先≤800mm', one: '优先≤840mm' },
-  '181cm以上': { both: '座高限制较小', one: '座高限制较小' }
-}
-
 function getSeatHeightRecommendation(answers) {
-  const height = (answers.height || [])[0]
+  const index = heights.indexOf((answers.height || [])[0])
   const footing = (answers.footing || [])[0]
-  const guide = seatHeightGuide[height]
-  if (!guide || !footing) return '完成身高和着地方式后生成建议'
-  return footing === '优先双脚着地' ? guide.both : guide.one
+  if (index < 0 || !footing) return '完成身高和着地方式后生成建议'
+  return '参考≤' + seatReferences[index][footing === '优先双脚着地' ? 0 : 1] + 'mm；建议到店试坐'
 }
 
 Page({
@@ -82,7 +74,10 @@ Page({
     canContinue: false,
     showSummary: false,
     showResult: false,
-    summaryItems: []
+    summaryItems: [],
+    recommendations: [],
+    pricePending: [],
+    resultMessage: ''
   },
 
   chooseOption(event) {
@@ -115,7 +110,9 @@ Page({
 
   nextStep() {
     if (this.data.showSummary) {
-      this.setData({ showResult: true, showSummary: false })
+      const result = recommend(models, this.data.answers)
+      if (result.status !== 'ok') { wx.showToast({ title: result.message, icon: 'none' }); return }
+      this.setData({ showResult: true, showSummary: false, recommendations: result.top, pricePending: result.pricePending, resultMessage: result.message })
       return
     }
     if (!this.data.canContinue) return
@@ -197,8 +194,16 @@ Page({
       canContinue: false,
       showSummary: false,
       showResult: false,
-      summaryItems: []
+      summaryItems: [],
+    recommendations: [],
+    pricePending: [],
+    resultMessage: ''
     })
+  },
+
+  viewModel(event) {
+    const id = event.currentTarget.dataset.id
+    if (models.some(m => m.id === id)) wx.navigateTo({ url: '/pages/detail/detail?model=' + encodeURIComponent(id) })
   },
 
   goCompare() {
