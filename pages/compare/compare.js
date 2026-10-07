@@ -43,11 +43,11 @@ Page({
   onLoad(options) {
     const patch = {}
     if (options.a) {
-      const modelA = models.find(item => item.id === decodeURIComponent(options.a))
+      const modelA = models.find(item => item.id === options.a)
       if (modelA) patch.modelA = modelA
     }
     if (options.b) {
-      const modelB = models.find(item => item.id === decodeURIComponent(options.b))
+      const modelB = models.find(item => item.id === options.b)
       if (modelB) patch.modelB = modelB
     }
     if (Object.keys(patch).length) this.setData(patch)
@@ -70,6 +70,7 @@ Page({
 
   chooseModel(event) {
     const model = this.data.models[event.currentTarget.dataset.index]
+    if (!model) return
     const other = this.data.pickerSlot === 'A' ? this.data.modelB : this.data.modelA
     if (other && other.id === model.id) {
       wx.showToast({ title: '请选择不同车型', icon: 'none' })
@@ -82,6 +83,7 @@ Page({
 
   viewDetail(event) {
     const model = this.data.models[event.currentTarget.dataset.index]
+    if (!model) return
     wx.navigateTo({ url: '/pages/detail/detail?model=' + encodeURIComponent(model.id) })
   },
 

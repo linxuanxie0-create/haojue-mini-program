@@ -1,0 +1,83 @@
+{
+  "status": "NOT_READY_FOR_PRODUCTION",
+  "applied": false,
+  "affected": [
+    {
+      "id": "uhr150-2026",
+      "name": "UHR150 26’升级款",
+      "original": 5,
+      "proposal": 3,
+      "reason": "交付资料缺整车寿命/磨损的直接证据，5分需复核；建议中性基准，仅供审批"
+    },
+    {
+      "id": "uhr150-new",
+      "name": "UHR150新款",
+      "original": 5,
+      "proposal": 3,
+      "reason": "交付资料缺整车寿命/磨损的直接证据，5分需复核；建议中性基准，仅供审批"
+    },
+    {
+      "id": "uhr150-high-handlebar",
+      "name": "UHR150高手把款",
+      "original": 5,
+      "proposal": 3,
+      "reason": "交付资料缺整车寿命/磨损的直接证据，5分需复核；建议中性基准，仅供审批"
+    },
+    {
+      "id": "uh110s",
+      "name": "UH110S",
+      "original": 5,
+      "proposal": 3,
+      "reason": "交付资料缺整车寿命/磨损的直接证据，5分需复核；建议中性基准，仅供审批"
+    }
+  ],
+  "profile": {
+    "budget": [
+      "还没确定"
+    ],
+    "scenario": [
+      "日常通勤"
+    ],
+    "experience": [
+      "第一次骑摩托"
+    ],
+    "height": [
+      "171–175cm"
+    ],
+    "footing": [
+      "优先双脚着地"
+    ],
+    "priorities": [
+      "省心耐用"
+    ]
+  },
+  "current": [
+    {
+      "name": "UHR150 26’升级款",
+      "total": 97
+    },
+    {
+      "name": "UH110S",
+      "total": 86
+    },
+    {
+      "name": "ADX125",
+      "total": 83
+    }
+  ],
+  "hypothetical": [
+    {
+      "name": "UHR150 26’升级款",
+      "total": 87
+    },
+    {
+      "name": "ADX125",
+      "total": 83
+    },
+    {
+      "name": "AFR125",
+      "total": 83
+    }
+  ],
+  "finding": "仅关注耐用时，原表5分相对中性3分产生10分优势；不能宣传更耐用，修改源评分需用户批准"
+}

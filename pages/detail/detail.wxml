@@ -8,16 +8,16 @@
   </view>
   <view class="tabs"><view class="tab {{activeTab === '车型亮点' ? 'current' : ''}}" data-tab="车型亮点" bindtap="selectTab">车型亮点</view><view class="tab {{activeTab === '核心配置' ? 'current' : ''}}" data-tab="核心配置" bindtap="selectTab">核心配置</view><view class="tab {{activeTab === '日常体验' ? 'current' : ''}}" data-tab="日常体验" bindtap="selectTab">日常体验</view></view>
 
-  <view wx:if="{{activeTab === '车型亮点'}}" class="intro"><view><text class="eyebrow">HIGHLIGHTS</text><text class="section-title">车型亮点（演示）</text></view><text class="intro-copy">亮点与参数待接入官方核实数据，当前为界面布局示意。</text></view>
-  <view wx:if="{{activeTab === '车型亮点'}}" class="metrics"><view class="metric lime"><view class="metric-top">动力形式 <text class="metric-arrow">↗</text></view><text class="metric-value">待核实</text><text class="metric-foot">官方参数待接入</text></view><view class="metric dark"><view class="metric-top">制动系统 <text class="metric-arrow">↗</text></view><text class="metric-value">待核实</text><text class="metric-foot">官方参数待接入</text></view></view>
-  <view wx:if="{{activeTab === '车型亮点'}}" class="feature-list"><view class="feature-row"><view class="feature-icon">◉</view><view class="feature-text"><text class="feature-title">配置亮点 1</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view><view class="feature-row"><view class="feature-icon">⌁</view><view class="feature-text"><text class="feature-title">配置亮点 2</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view><view class="feature-row"><view class="feature-icon">ϟ</view><view class="feature-text"><text class="feature-title">配置亮点 3</text><text class="feature-desc">待核实官方配置</text></view><text class="feature-arrow">›</text></view></view>
+  <view class="intro"><view><text class="eyebrow">OFFICIAL SNAPSHOT</text><text class="section-title">{{activeTab}}</text></view><text class="intro-copy">{{model.priceText}} · 门店有售：{{model.is_available === true ? '门店标记有售，现车请咨询' : (model.is_available === false ? '已停卖/下架' : '未知，请咨询')}}
+{{model.variant_note}}</text></view>
+  <view wx:if="{{activeTab === '核心配置' || activeTab === '车型亮点'}}" class="feature-list">
+    <view wx:for="{{parameterRows}}" wx:key="key" class="feature-row"><view class="feature-text"><text class="feature-title">{{item.name}}</text><text class="feature-desc">{{item.value}}</text></view></view>
+  </view>
+  <view wx:if="{{activeTab === '日常体验'}}" class="intro"><text class="intro-copy">座高较低可能方便触地，但受腿长、座垫宽度、体重影响，建议到店试坐。用途、舒适、储物和耐用评分是内部匹配参考，不能用于保证实际体验或宣称整车更耐用。</text></view>
+  <view class="source-note">安全验证：{{model.safety_features_verified.status}} · {{model.safety_features_verified.note}}
+复核状态：{{model.review_status}} · 更新时间：{{model.updated_at}}
+评分依据：门槛L2固定公式；用途与关注点含L3启发式及混合证据，尚待版本核验，不是官方评级。</view>
+  <view wx:for="{{model.official_source_urls}}" wx:key="*this" class="source-note">资料来源：{{item}}</view>
 
-  <view wx:if="{{activeTab === '核心配置'}}" class="intro"><view><text class="eyebrow">SPECS</text><text class="section-title">核心配置</text></view><text class="intro-copy">核心配置待接入官方核实数据。</text></view>
-  <view wx:if="{{activeTab === '核心配置'}}" class="metrics"><view class="metric lime"><view class="metric-top">排量 <text class="metric-arrow">↗</text></view><text class="metric-value">—</text><text class="metric-foot">待核实</text></view><view class="metric dark"><view class="metric-top">座高 <text class="metric-arrow">↗</text></view><text class="metric-value">—</text><text class="metric-foot">待核实</text></view></view>
-
-  <view wx:if="{{activeTab === '日常体验'}}" class="intro"><view><text class="eyebrow">EXPERIENCE</text><text class="section-title">日常体验</text></view><text class="intro-copy">日常体验解读待接入（演示）。</text></view>
-  <view wx:if="{{activeTab === '日常体验'}}" class="feature-list"><view class="feature-row"><view class="feature-icon">◉</view><view class="feature-text"><text class="feature-title">日常体验解读</text><text class="feature-desc">待接入官方定位与场景解读</text></view><text class="feature-arrow">›</text></view></view>
-
-  <view class="source-note">整车图来源：豪爵官网 · 参数为演示，以豪爵官网及实车配置为准</view>
   <view class="bottom-actions"><view class="compare-button" bindtap="addToCompare">＋ 加入对比</view><view class="ask-button" bindtap="askStore">咨询门店 <text>↗</text></view></view>
 </view>

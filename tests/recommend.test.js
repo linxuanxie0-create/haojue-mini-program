@@ -1,0 +1,26 @@
+const assert=require('node:assert/strict')
+const {models,normalizeShift}=require('../data/models')
+const {recommend,seatScore,validateModel}=require('../utils/recommend')
+const base={budget:['还没确定'],scenario:['日常通勤'],experience:['经常骑行'],height:['181cm以上'],footing:['单脚着地也可以'],priorities:['轻松好骑']}
+const sample={...models.find(m=>m.id==='afr125'),difficulty:1,seat_height_mm:700,scoring:Object.fromEntries(Object.keys(models[0].scoring).map(k=>[k,5])),eligible:true}
+let checks=0
+function check(name,fn){fn();checks++;console.log('PASS',name)}
+check('59/4/55/54/38 snapshot',()=>{assert.equal(models.length,59);assert.equal(models.filter(m=>m.is_public_service).length,4);assert.equal(models.filter(m=>!m.is_public_service).length,55);assert.equal(models.filter(m=>!m.is_public_service&&m.difficulty!==null).length,54);assert.equal(models.filter(m=>!m.is_public_service&&m.official_price_cny!==null).length,38)})
+check('schema / unique IDs',()=>{assert.equal(new Set(models.map(m=>m.id)).size,59);models.forEach(m=>assert.deepEqual(validateModel(m),[]))})
+check('shift normalization',()=>{['踏板 / 无级变速','自动无级变速'].forEach(s=>assert.equal(normalizeShift(s).operationScore,1));assert.equal(normalizeShift('六挡往复式').operationScore,3);assert.equal(normalizeShift('弯梁 / 循环挡').operationScore,2)})
+for(const [label,max] of [['1 万元以内',10000],['1–1.5 万元',15000],['1.5–2 万元',20000]])for(const price of [max-1,max,max+1])check('budget '+price+'/'+max,()=>assert.equal(recommend([{...sample,official_price_cny:price}],{...base,budget:[label]}).top.length,price<=max?1:0))
+check('unknown price excluded only from finite budget',()=>{const m={...sample,official_price_cny:null};assert.equal(recommend([m],{...base,budget:['1 万元以内']}).top.length,0);assert.equal(recommend([m],base).top.length,1)})
+check('above 20k no minimum',()=>assert.equal(recommend([{...sample,official_price_cny:1000}],{...base,budget:['2 万元以上']}).top.length,1))
+check('current versus crossed-out price',()=>{const m=models.find(m=>m.id==='dl250-c');assert.equal(m.official_price_cny,20980);assert.match(m.raw_excel['官网当前价格'],/22,680/)})
+check('first rider difficulty 5 excluded',()=>assert.equal(recommend([{...sample,difficulty:5}],{...base,experience:['第一次骑摩托']}).top.length,0))
+check('seat boundaries and missing',()=>{assert.deepEqual([720,721,740,741,760,761,780,781].map(s=>seatScore(s,720)),[20,15,15,8,8,3,3,0]);assert.equal(seatScore(null,720),null);assert.equal(recommend([{...sample,seat_height_mm:null}],base).top.length,0)})
+check('short rider high seat, no promised footing',()=>{const r=recommend([{...sample,seat_height_mm:810}],{...base,height:['≤155cm'],footing:['优先双脚着地']});assert.equal(r.top[0].breakdown.seat,0)})
+check('0 / budget-only priorities pending; 1/2/3 equal allocation',()=>{for(const p of [[],['预算合适']])assert.equal(recommend([sample],{...base,priorities:p}).status,'priority_rule_pending');for(const p of [['轻松好骑'],['轻松好骑','乘坐舒适'],['轻松好骑','乘坐舒适','储物空间']])assert.equal(recommend([sample],{...base,priorities:p}).top[0].total,100)})
+check('budget emphasis earns no points',()=>assert.equal(recommend([sample],{...base,priorities:['预算合适','轻松好骑']}).top[0].total,100))
+check('missing UFR150A excluded',()=>assert.equal(recommend([models.find(m=>m.id==='ufr150a')],base).top.length,0))
+check('public service / unavailable / NaN / duplicates',()=>{for(const patch of [{is_public_service:true},{is_available:false},{official_price_cny:NaN},{difficulty:NaN},{scoring:{x:NaN}}])assert.equal(recommend([{...sample,...patch}],base).top.length,0);assert.equal(recommend([sample,sample],base).top.length,0)})
+check('family diversity before score filler, fewer than 3 allowed',()=>{const a={...sample,id:'a',model_id:'a',family_id:'x'},b={...sample,id:'b',model_id:'b',family_id:'x'},c={...sample,id:'c',model_id:'c',family_id:'y',scoring:{...sample.scoring,日常通勤:4}};assert.deepEqual(recommend([a,b,c],base).top.map(m=>m.id),['a','c','b']);assert.equal(recommend([a],base).top.length,1);assert.equal(recommend([a,c],base).top.length,2)})
+check('below threshold no forced result',()=>assert.equal(recommend([{...sample,scoring:Object.fromEntries(Object.keys(sample.scoring).map(k=>[k,1])),seat_height_mm:1000,difficulty:4}],{...base,experience:['第一次骑摩托']}).top.length,0))
+check('invalid answers no crash',()=>{assert.equal(recommend(models,{}).status,'invalid_answers');assert.equal(recommend(models,{...base,priorities:['不存在']}).status,'invalid_answers')})
+check('version mass not silently first value / safety no inference',()=>{const m=models.find(m=>m.id==='tvl350');assert.equal(m.curb_mass_kg,null);assert.match(m.parameters.weight,/196.*208/);models.filter(m=>m.safety_features_verified.status!=='直接官网证据').forEach(m=>assert.equal(m.safety_features_verified.ABS,null));assert.equal(models.find(m=>m.id==='adx125').safety_features_verified.TCS,true)})
+console.log(checks+' test groups passed')

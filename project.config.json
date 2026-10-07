@@ -34,15 +34,19 @@
     "ignore": [
       {
         "type": "folder",
-        "value": "assets/video"
+        "value": "preview"
       },
       {
         "type": "folder",
-        "value": "preview"
+        "value": "downloads"
       },
       {
         "type": "file",
         "value": "images/uhr150.svg"
+      },
+      {
+        "type": "file",
+        "value": "images/uhr150-motion-cutout.webp"
       },
       {
         "type": "file",
@@ -65,8 +69,40 @@
         "value": "uhr150-ui-preview.svg"
       },
       {
+        "type": "folder",
+        "value": "scripts"
+      },
+      {
+        "type": "folder",
+        "value": "tests"
+      },
+      {
+        "type": "folder",
+        "value": "reports"
+      },
+      {
+        "type": "folder",
+        "value": "data/source"
+      },
+      {
         "type": "file",
-        "value": "images/uhr150-motion-cutout.png"
+        "value": "data/source.schema.json"
+      },
+      {
+        "type": "file",
+        "value": "README.md"
+      },
+      {
+        "type": "file",
+        "value": "data/audited-source.json"
+      },
+      {
+        "type": "file",
+        "value": "data/quality.json"
+      },
+      {
+        "type": "file",
+        "value": "data/store-overrides.json"
       }
     ],
     "include": []

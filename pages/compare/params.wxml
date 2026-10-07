@@ -10,16 +10,17 @@
   </view>
 
   <view class="table-head"><view class="parameter-column"><text class="table-label">官方参数</text><text class="table-sublabel">翻译成日常体验</text></view><text class="value-column">A</text><text class="value-column">B</text></view>
-  <view class="parameter-list">
+  <scroll-view scroll-y class="parameter-list">
     <view wx:for="{{parameters}}" wx:key="key" class="parameter-row">
       <view class="parameter-copy"><text class="parameter-name">{{item.name}}</text><text class="parameter-translation">{{item.translation}}</text></view>
-      <text class="parameter-value">—</text>
-      <text class="parameter-value">—</text>
+      <text class="parameter-value">{{item.valueA}}</text>
+      <text class="parameter-value">{{item.valueB}}</text>
     </view>
-  </view>
+  </scroll-view>
 
   <view class="parameter-footer">
-    <text class="data-note">“—”表示暂无已核实数据 · 数据来源：豪爵官方资料</text>
+    <text class="data-note">A：{{modelA.variant_note}} B：{{modelB.variant_note}}</text>
+    <text class="data-note">资料快照：2026-10-07 · 来源URL及版本说明见车型详情；安全配置未核验不代表没有配置。</text>
     <view class="back-to-scenes" bindtap="backToScenes">‹  返回场景化对比</view>
   </view>
 </view>

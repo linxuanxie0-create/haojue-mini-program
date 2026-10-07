@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema", "as_of", "data_is_provisional", "hard_rules", "items"],
+  "properties": {
+    "schema": {"enum": ["haojue-select-handoff-audit-v1"]},
+    "as_of": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "data_is_provisional": {"enum": [true]},
+    "hard_rules": {"type": "string"},
+    "items": {"type": "array", "minItems": 59, "maxItems": 59, "items": {
+      "type": "object",
+      "required": ["excel_row", "model", "family", "is_public_service", "recommendation_eligible_for_screening", "official_reference_price_cny", "price_usable_for_budget_filter", "score_notes", "review_required", "raw_excel"],
+      "properties": {
+        "excel_row": {"type": "integer", "minimum": 2, "maximum": 60},
+        "model": {"type": "string", "minLength": 1},
+        "family": {"type": "string", "minLength": 1},
+        "is_public_service": {"type": "boolean"},
+        "recommendation_eligible_for_screening": {"type": "boolean"},
+        "official_reference_price_cny": {"type": ["number", "null"], "minimum": 1},
+        "price_usable_for_budget_filter": {"type": "boolean"},
+        "review_required": {"type": "boolean"},
+        "score_notes": {"type": "string"},
+        "raw_excel": {"type": "object"}
+      }
+    }}
+  }
+}

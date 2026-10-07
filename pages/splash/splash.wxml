@@ -1,5 +1,5 @@
 <view class="cover-page">
-  <image class="cover-motion" src="/images/uhr150-motion-cutout.webp" mode="aspectFit"></image>
+  <image class="cover-motion" src="/images/uhr150-motion-cutout.png" mode="aspectFit" animation="{{vehicleAnimation}}" bindload="onVehicleImageLoad"></image>
 
   <view class="ambient ambient-top"></view>
   <view class="ambient ambient-bottom"></view>
