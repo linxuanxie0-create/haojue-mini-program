@@ -1,7 +1,13 @@
 const heights = ['≤155cm','156–160cm','161–165cm','166–170cm','171–175cm','176–180cm','181cm以上']
 const seatReferences = [[720,740],[740,760],[750,780],[760,790],[780,810],[800,830],[820,850]]
 const experiences = { '第一次骑摩托':[20,17,10,3,null], '偶尔骑一骑':[20,20,17,10,3], '经常骑行':[20,20,20,20,20], '还不确定':[20,18,13,6,0] }
-const budgets = {'1 万元以内':10000,'1–1.5 万元':15000,'1.5–2 万元':20000,'2 万元以上':Infinity,'还没确定':Infinity}
+const budgets = {
+ '8000元以内': { min: 0, max: 8000 },
+ '8000–10000元': { min: 8000, max: 10000 },
+ '10000–15000元': { min: 10000, max: 15000 },
+ '15000元以上': { min: 15000, max: Infinity },
+ '还没确定': { min: 0, max: Infinity }
+}
 const priorities = ['预算合适','轻松好骑','安全配置','乘坐舒适','储物空间','省心耐用']
 const first = (a,k) => Array.isArray(a[k]) ? a[k][0] : undefined
 const five = n => Number.isInteger(n) && n>=1 && n<=5
@@ -41,8 +47,8 @@ function recommend(models, answers) {
   else if(!m.eligible || m.difficulty===null) reason='自动推荐停用：关键数据待核验'
   else if(m.seat_height_mm===null) reason='座高待核验，不能计算着地分'
   else if(experience[m.difficulty-1]===null) reason='首次骑行排除门槛5'
-  else if(Number.isFinite(budget) && m.official_price_cny===null) reason='价格待确认，不进入预算合规排名'
-  else if(m.official_price_cny!==null && m.official_price_cny>budget) reason='超预算'
+  else if(budget.max !== Infinity && m.official_price_cny===null) reason='价格待确认，不进入预算合规排名'
+  else if(m.official_price_cny!==null && (m.official_price_cny<budget.min || m.official_price_cny>budget.max)) reason='不在预算范围'
   if(reason) {excluded.push({id:m.id,model:m.modelName,reason}); if(reason.startsWith('价格待确认')) pricePending.push(m);return}
   const focus=scoringPriorities.map(p=>({name:p,raw:m.scoring[p],points:m.scoring[p]/5*25/scoringPriorities.length}))
   const breakdown={usage:m.scoring[scenario]/5*35,experience:experience[m.difficulty-1],seat:seatScore(m.seat_height_mm,reference),priorities:focus.reduce((s,p)=>s+p.points,0),focus,seatReference:reference}
