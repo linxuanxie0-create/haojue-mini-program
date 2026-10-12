@@ -11,7 +11,7 @@
   <view class="intro"><view><text class="eyebrow">OFFICIAL SNAPSHOT</text><text class="section-title">{{activeTab}}</text></view><text class="intro-copy">{{model.priceText}} · 门店有售：{{model.is_available === true ? '门店标记有售，现车请咨询' : (model.is_available === false ? '已停卖/下架' : '未知，请咨询')}}
 {{model.variant_note}}</text></view>
   <view wx:if="{{activeTab === '核心配置' || activeTab === '车型亮点'}}" class="feature-list">
-    <view wx:for="{{parameterRows}}" wx:key="key" class="feature-row"><view class="feature-text"><text class="feature-title">{{item.name}}</text><text class="feature-desc">{{item.value}}</text></view></view>
+    <view wx:for="{{parameterRows}}" wx:key="key" class="feature-row"><text class="feature-title">{{item.name}}</text><text class="feature-value">{{item.value}}</text></view>
   </view>
   <view wx:if="{{activeTab === '日常体验'}}" class="intro"><text class="intro-copy">座高较低可能方便触地，但受腿长、座垫宽度、体重影响，建议到店试坐。用途、舒适、储物和耐用评分是内部匹配参考，不能用于保证实际体验或宣称整车更耐用。</text></view>
   <view class="source-note">安全验证：{{model.safety_features_verified.status}} · {{model.safety_features_verified.note}}
